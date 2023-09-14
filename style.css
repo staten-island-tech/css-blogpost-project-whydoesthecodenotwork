@@ -5,24 +5,39 @@ h1 {
     text-decoration-style: wavy;
     font-family: 'Luckiest Guy', cursive;
     text-shadow: 0px 0px 15px rgb(200,50,100);
-    margin-bottom: 3%;
   }
 
 h2 {
     font-size: 36px;
     margin: 1%;
-    margin-left: 0.5%;
+    margin-top: 0%;
   }
+
+h3 {
+  font-size: 18px;
+  margin: 1%;
+}
 
 .post {
     margin: 2%;
     padding-left: 2%;
     padding-right: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     background-color: rgb(245,235,245);
     border: solid;
     border-radius: 5px;
     border-color: black;
     border-width: 2px;
+    width:60%;
+}
+
+.entry {
+  margin: 1%;
+  display: inline-block;
+  vertical-align: top; /* or top or bottom */
+  float: left;
+  max-width: 60%;
 }
 
 body {
@@ -30,10 +45,25 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-.centerimage {
-    
-    margin: 2%;
-    display: inline-block;
-    width: 80%;
+.postimage {
+    width:30%;
     border-radius: 2%;
+    float:right;
+    margin:1%;
   }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ad {
+  width: min-content;
+  float:right;
+  padding-left:5%;
+}
+
+::content {
+  float:left;
+}
