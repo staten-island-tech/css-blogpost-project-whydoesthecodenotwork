@@ -22,8 +22,8 @@ h3 {
 }
 
 .blog__post {
-    margin: 5px;
-    padding: 5px 0.5%;
+    margin: 0 5% 2% 0;
+    padding: 5px 1%;
     background-color: rgb(245, 230, 245);
     border: solid;
     border-radius: 7px;
@@ -33,7 +33,7 @@ h3 {
 }
 
 .post__entry {
-  margin: 1% 0.5%;
+  margin: 1%;
   display: inline-block;
   vertical-align: top;
   float: left;
@@ -41,7 +41,7 @@ h3 {
 }
 
 body {
-    background-color: rgb(245,220,245);
+    background-color: rgb(245,240,245);
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
@@ -78,10 +78,15 @@ body {
   float: right;
   width: 20%;
   justify-content: center;
-  margin: 5px 0 0 1%; /*top right bottom left (left uses a percentage here because i think it looks better as the screen size scales)*/
+  margin: 5px 0 0 2%; /*top right bottom left (left uses a percentage here because i think it looks better as the screen size scales)*/
 }
 
 #blog {
   display: flex;
   justify-content: center;
+}
+
+ul {
+  clear:both;
+  max-width: 65%;
 }
